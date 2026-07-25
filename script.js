@@ -67,3 +67,34 @@ if (projectCards.length && !prefersReducedMotion && window.gsap && window.Scroll
     card.style.opacity = "1";
   });
 }
+
+/**
+ * Hero Driver Head Mouse Tracking Parallax (Head Only)
+ */
+const heroDriverHead = document.querySelector("#driver-head") || document.querySelector(".hero_driver img");
+if (heroDriverHead && !prefersReducedMotion) {
+  let mouseX = 0;
+  let mouseY = 0;
+  let currentX = 0;
+  let currentY = 0;
+  
+  document.addEventListener("mousemove", (e) => {
+    // Calculate displacement relative to window center
+    mouseX = (e.clientX - window.innerWidth / 2) / 35;
+    mouseY = (e.clientY - window.innerHeight / 2) / 35;
+  });
+
+  const updateDriverHeadParallax = () => {
+    // Smooth lerp easing
+    currentX += (mouseX - currentX) * 0.08;
+    currentY += (mouseY - currentY) * 0.08;
+    
+    // Rotate head slightly in the direction of movement
+    const rotate = currentX * 0.6;
+    
+    heroDriverHead.style.transform = `translate3d(${currentX}px, ${currentY}px, 0) rotate(${rotate}deg)`;
+    requestAnimationFrame(updateDriverHeadParallax);
+  };
+  
+  updateDriverHeadParallax();
+}
