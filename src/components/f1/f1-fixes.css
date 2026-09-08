@@ -1,0 +1,17 @@
+.f1-list p { margin: 8px 0 0; color: #bfc1bd; font-size: 16px; line-height: 1.45; }
+.f1-page { overflow-x: clip; overflow-y: visible; }
+.f1-page :focus-visible { outline: 2px solid var(--f1-lime); outline-offset: 4px; }
+.f1-email { overflow-wrap: anywhere; }
+.f1-contact label { font-size: 14px; }
+.f1-contact label { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: #bfc1bd; }
+@media (max-width: 1050px) and (min-width: 761px) { .f1-links { gap: 10px; } .f1-nav { padding-inline: 20px; } }
+
+.f1-projects { display: grid; grid-template-columns: minmax(260px, .8fr) minmax(0, 1.2fr); gap: 48px; align-items: start; }
+.f1-project-panel { padding-top: 4px; }
+.f1-project-list { border-top: 1px solid #555; }
+.f1-project-list .f1-programme { border-right: 0; min-height: 250px; }
+.f1-project-progress-label { display: flex; justify-content: space-between; font-size: 12px; color: #bfc1bd; text-transform: uppercase; letter-spacing: .08em; }
+.f1-project-progress { height: 3px; background: #404244; margin-top: 12px; }
+.f1-project-progress-fill { display: block; height: 100%; width: 100%; background: var(--f1-red); transform: scaleX(0); }
+@media (max-width: 999px) { .f1-projects { display: block; } .f1-project-panel { margin-bottom: 40px; } .f1-project-list .f1-programme { min-height: 0; } }
+@media (max-width: 1050px) { .f1-links { display: none; position: absolute; top: 61px; left: 0; right: 0; background: #121315; padding: 20px; flex-direction: column; } .f1-links.is-open { display: flex; } .f1-menu { display: block; } }

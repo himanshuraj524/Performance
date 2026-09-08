@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #151312;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #151312;
+  overflow-x: hidden;
+  color: #FFFFFF;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #151312;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262423;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F46C38;
+}
+
+/* Sawad Typography Scaling */
+.text-mega {
+  font-size: clamp(3.2rem, 7.5vw, 110px);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+.text-section-title {
+  font-size: clamp(2.4rem, 6vw, 90px);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}

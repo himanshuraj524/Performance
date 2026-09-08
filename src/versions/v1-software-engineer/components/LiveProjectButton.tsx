@@ -1,0 +1,28 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+
+interface LiveProjectButtonProps {
+  className?: string;
+  href?: string;
+  onClick?: () => void;
+}
+
+export const LiveProjectButton: React.FC<LiveProjectButtonProps> = ({
+  className = '',
+  href = '#',
+  onClick,
+}) => {
+  return (
+    <motion.a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      whileHover={{ scale: 1.04 }}
+      whileTap={{ scale: 0.96 }}
+      onClick={onClick}
+      className={`inline-flex items-center justify-center rounded-full border-2 border-[#D7E2EA] text-[#D7E2EA] font-medium uppercase tracking-widest px-8 py-3 sm:px-10 sm:py-3.5 text-sm sm:text-base hover:bg-[#D7E2EA]/10 transition-colors duration-200 ${className}`}
+    >
+      Live Project
+    </motion.a>
+  );
+};

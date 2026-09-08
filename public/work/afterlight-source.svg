@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+  <rect width="1600" height="1100" fill="#22211e"/>
+  <circle cx="840" cy="515" r="322" fill="none" stroke="#df6b3f" stroke-width="2"/>
+  <circle cx="840" cy="515" r="248" fill="#df6b3f"/>
+  <circle cx="840" cy="515" r="144" fill="#f1efe8"/>
+  <path d="M0 874H1600M118 0V1100M1482 0V1100" stroke="#f1efe8" stroke-opacity=".28"/>
+  <g fill="#f1efe8" font-family="Arial, Helvetica, sans-serif">
+    <text x="74" y="72" font-size="18" letter-spacing="3">AFTERLIGHT ARCHIVE / 001</text>
+    <text x="1230" y="72" font-size="18" letter-spacing="3">IMAGE / MEMORY / MOTION</text>
+    <text x="700" y="548" font-size="92" font-weight="700" letter-spacing="-4">28</text>
+    <text x="74" y="1000" font-size="180" font-weight="700" letter-spacing="-10">AFTERLIGHT</text>
+  </g>
+</svg>
